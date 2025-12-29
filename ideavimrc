@@ -151,9 +151,6 @@ let g:WhichKeyDesc_find_in_path = "<leader>fg Find in Files"
 map <leader>fr <Action>(RecentFiles)
 let g:WhichKeyDesc_recent_files = "<leader>fr Open Recent Files"
 
-map <leader>fs <Action>(FileStructurePopup)
-let g:WhichKeyDesc_file_structure = "<leader>fs Open Current File Structure"
-
 map <leader>sa <Action>(GotoAction)
 let g:WhichKeyDesc_search_action = "<leader>sa Search an Action"
 
@@ -163,8 +160,11 @@ let g:WhichKeyDesc_search_class = "<leader>sc Search a Class"
 map <leader>sh <Action>(ShowHoverInfo)
 let g:WhichKeyDesc_show_hover = "<leader>sh Show Hover Info"
 
-map <leader>ss <Action>(GotoSymbol)
-let g:WhichKeyDesc_search_symbol = "<leader>ss Search Symbol"
+map <leader>sS <Action>(GotoSymbol)
+let g:WhichKeyDesc_search_ws_symbol = "<leader>sS Search Workspace Symbol"
+
+map <leader>ss <Action>(FileStructurePopup)
+let g:WhichKeyDesc_search_file_symbol = "<leader>ss Open File Symbols"
 
 map <leader>st <Action>(QuickTypeDefinition)
 let g:WhichKeyDesc_quick_type_def = "<leader>st Quick Type Definition"
@@ -188,6 +188,9 @@ let g:WhichKeyDesc_git_diff = "<leader>gd Git Diff"
 
 map <leader>ca <Action>(ShowIntentionActions)
 let g:WhichKeyDesc_show_context_actions = "<leader>ca Show Code Actions"
+
+map <leader>Cc <Action>(CompileDirty)
+let g:WhichKeyDesc_code_compile = "<leader>Cc Compile Code"
 
 map <leader>cc <Action>(EditorCompleteStatement)
 let g:WhichKeyDesc_code_complete_statement = "<leader>cc Complete Code Statement"
