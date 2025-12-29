@@ -68,16 +68,28 @@ nnoremap <Esc> :nohlsearch<cr>
 map <M-k> <Action>(EditorUp)
 map <M-j> <Action>(EditorDown)
 
-" Window/Tab management
+" Window/Tab/Buffer management
 
-map <leader>tq <Action>(CloseContent)
-let g:WhichKeyDesc_tab_close = "<leader>tq Close Current Tab"
+map <leader>bd <Action>(CloseContent)
+let g:WhichKeyDesc_buffer_close = "<leader>bd Close Current Buffer/File"
 
-map <leader>tQ <Action>(CloseAllEditors)
-let g:WhichKeyDesc_tab_close_all = "<leader>tQ Close All Tabs"
+map <leader>bD <Action>(CloseAllEditors)
+let g:WhichKeyDesc_buffer_close_all = "<leader>bD Close All Buffers/Files"
 
-map <leader>to <Action>(CloseAllEditorsButActive)
-let g:WhichKeyDesc_tab_close_other = "<leader>to Close Other Tabs"
+map <leader>bo <Action>(CloseAllEditorsButActive)
+let g:WhichKeyDesc_buffer_close_other = "<leader>bo Close Other Buffers/Files"
+
+map <leader>bp <Action>(PinActiveEditorTab)
+let g:WhichKeyDesc_buffer_pin_current = "<leader>bp Pin Current Buffer/File"
+
+map <leader>bP <Action>(CloseAllUnpinnedEditors)
+let g:WhichKeyDesc_buffer_delete_unpinned = "<leader>bP Close Unpinned Buffers/Files"
+
+map <leader>br <Action>(CloseAllToTheRight)
+let g:WhichKeyDesc_buffer_delete_to_right = "<leader>br Close Buffers/Files to the Right"
+
+map <leader>bl <Action>(CloseAllToTheLeft)
+let g:WhichKeyDesc_buffer_delete_to_left = "<leader>bl Close Buffers/Files to the Left"
 
 map <leader>wv <Action>(SplitVertically)
 let g:WhichKeyDesc_window_vsplit = "<leader>wv Split Right"
