@@ -3,7 +3,7 @@
 " You can find a list of commands here: https://jb.gg/h38q75
 " Find more examples here: https://jb.gg/share-ideavimrc
 
-" This file is only for Intellij. It's here to havr it all saved in my vim configs
+" This file is only for Intellij. It's here to have it all saved in my vim configs
 
 " leader key
 let mapleader = ' '
@@ -68,6 +68,17 @@ nnoremap <Esc> :nohlsearch<cr>
 map <M-k> <Action>(EditorUp)
 map <M-j> <Action>(EditorDown)
 
+ " Groups preix docs
+let g:WhichKeyDesc_buffer = "<leader>b +buffer"
+let g:WhichKeyDesc_window = "<leader>w +window"
+let g:WhichKeyDesc_find = "<leader>f +find"
+let g:WhichKeyDesc_search = "<leader>s +search"
+let g:WhichKeyDesc_git = "<leader>g +git"
+let g:WhichKeyDesc_code = "<leader>c +code"
+let g:WhichKeyDesc_compile = "<leader>C +compile/build"
+let g:WhichKeyDesc_error = "<leader>e +error"
+let g:WhichKeyDesc_ui = "<leader>u +ui"
+
 " Window/Tab/Buffer management
 
 map <leader>bd <Action>(CloseContent)
@@ -126,7 +137,7 @@ map gi <Action>(GotoImplementation)
 let g:WhichKeyDesc_goto_implementation = "gi Goto Implementation"
 
 map gl <Action>(GotoLine)
-let g:WhichKeyDesc_goto_line = "gd Goto Line"
+let g:WhichKeyDesc_goto_line = "gl Goto Line"
 
 map gm <Action>(GotoSuperMethod)
 let g:WhichKeyDesc_goto_super = "gm Goto Super Method"
