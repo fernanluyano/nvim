@@ -6,4 +6,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
+keymap.set("n", "<leader>C", "<Nop>", { desc = "Code Compilaion/Build/Tools" })
 keymap.set("n", "<leader>Cc", "<cmd>terminal make compile<CR>", { desc = "Compile Project" })
+
+keymap.set("n", "<leader>h", "<Nop>", { desc = "Harpoon" })
